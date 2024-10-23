@@ -16,7 +16,7 @@ while True:
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Identify faces in frame
-    # Increase minNeighbors to increase criteria for faces, same for decrease
+    # Increase minNeighbors to increase criteria for faces, opposite for decrease
     faces = clf.detectMultiScale(
         gray,
         scaleFactor = 1.1,
